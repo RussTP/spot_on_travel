@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const searchTerm = destinationInput.value.toLowerCase();
 
         // Fetch the JSON data
-        fetch('travel_recommendation_api.json')
+        fetch('https://github.com/RussTP/spot_on_travel/blob/d97b73a40630feeb5bc73aa887c60b8e1ae24361/travel_recommendation_api.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Response failed');
