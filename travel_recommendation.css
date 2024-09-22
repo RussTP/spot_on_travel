@@ -4,7 +4,7 @@
     padding: 0;
     font-family: sans-serif;
 }
-
+/* Navigation */
 nav {
     background:  rgba(0, 68, 14, 0.500);
     display: flex;
@@ -20,17 +20,20 @@ nav {
 }
 
 
-
+/*banner w/ navigation*/
 .logo {
     display: flex;
     align-items: center;
     
 }
 
+
+
 .logo img {
     max-height: 40px;
     margin-right: 10px;
 }
+
 
 
 nav ul {
@@ -59,7 +62,7 @@ nav ul li a {
 
     
 
-
+/* Search bar on navbar */
 
 .searchWrapper {
     position: relative;
@@ -116,7 +119,7 @@ nav ul li a {
 
 
 
-
+/* background image for webpage*/
 
 #imgBack{
     display:block;
@@ -135,6 +138,11 @@ height: 30px;
 border-style: none;
 
   }
+
+  button :hover {
+    cursor: pointer;
+  }
+/* Home page container for explore dream destination & info */
 
 .containerMain {
    position: relative;
@@ -155,16 +163,17 @@ border-style: none;
 
 .middle-left  p {
     position: absolute;
-    left: 150px;
-    top: 480px;
+    left: 148px;
+    top: 420px;
     color:whitesmoke;
 width: 300px;
 font-size: 16px;
 border:none;
-background-color: rgba(0, 68, 14, 0.500);
-padding: 10px;
-border-radius: none;
+padding: 20px;
+border-radius: 10px;
 }
+
+/* side bar with vertical line and social media contacts */
 
 .sidebarContainer {
     position: absolute;
@@ -194,10 +203,17 @@ border-radius: none;
     
 }
 
+.icons :hover {
+    cursor: pointer;
+   
+}
+
+/* book now button */
+
 #bookNow {
     position: absolute;
-    margin-top: 620px;
-    margin-left: 150px;
+    margin-top: 600px;
+    margin-left: 170px;
     width: 150px;
     background-color: rgba(0, 68, 14);
     color: whitesmoke;
@@ -209,9 +225,11 @@ border-radius: none;
 
  }   
 
+ /* explore dream destination */
+
 .title-left h2 {
     position: absolute;
-    left: 150px;
+    left: 170px;
     top: 250px;
  font-weight: bold;
  font-size: 40px;
@@ -224,7 +242,7 @@ border-radius: none;
 .aboutUs h2 {
     position: absolute;
     left: 150px;
-    top: 250px;
+    top: 230px;
  font-weight: bold;
  font-size: 40px;
     color: whitesmoke;
@@ -237,12 +255,12 @@ border-radius: none;
     position: absolute;
     left: 155px;
     top: 300px;
-    width: 1300px;
+    width: 1070px;
     height: 140px;
    border:none;
-   padding: 5px;
-   border-radius: none;
-   background-color: rgba(0, 68, 14, 0.500);
+   padding: 20px;
+   border-radius: 10px;
+  
 
 }
 
@@ -278,7 +296,7 @@ left: 400px;
 
 
 }
-
+ /* container for team information box (team members) */
 .box {
     display: flex;
     flex-direction: column;
@@ -287,10 +305,11 @@ left: 400px;
     width: 250px;
     height: 200px;
     background-color: rgba(0, 68, 14, 0.500);
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 2px; 
 
 }
+
 
 .box p {
     margin-top: 10px;
@@ -301,12 +320,16 @@ left: 400px;
 }
 
 .box button {
- 
+ color: whitesmoke;
+ background-color: rgba(0, 68, 14);
     width: 150px;
+   
 }
 
+
+
 .box img {
-margin-top: 10px;
+margin-top: 25px;
 }
 
 /*Contact Us*/
@@ -336,9 +359,9 @@ form {
     position: absolute;
     background-color:rgba(0, 68, 14, 0.500);
     top: 300px;
-    left: 750px;
-    width: 700px;
-    height: 500px;
+    left: 50%;
+    width: 650px;
+    height: 420px;
 }
 
 form ul {
@@ -394,6 +417,10 @@ textarea {
     color: whitesmoke;
 }
 
+#buttonsmt :hover {
+    cursor: pointer;
+}
+
 ::placeholder {
     color: rgba(0, 68, 14);
 }
@@ -408,14 +435,46 @@ background-color: rgba(245, 245, 245, 0.589);
    background-color:rgba(245, 245, 245);
 }
 
-#destinationDiv {
-    display: flex;
+/* Search bar Results */
+
+ #result {
     position: absolute;
-justify-content: space-evenly;
-align-items: center;
-flex-wrap: wrap;
-gap: 20px;
-top: 500px;
-left: 400px;
+align-items: center; 
+justify-content: center;
+top: 150px;
+left: 60%;
+margin-right: 10%;
 
 }
+
+#result img {
+   margin-top: 20px;
+border-top-left-radius:10px;
+border-top-right-radius: 10px;
+border: solid 4px rgba(0, 68, 14, 0.500); ;
+
+
+}
+
+
+#result button {
+    color: whitesmoke;
+    background-color:  rgba(0, 68, 14);
+
+}
+
+#result button:hover {
+ cursor: pointer;
+}
+
+
+.destSearchContainer {
+    color: white;
+background-color:rgba(0, 68, 14, 0.500);
+padding: 10px;
+width: 388px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+
+}
+
